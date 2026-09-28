@@ -1,0 +1,41 @@
+{
+  "trained_at": "2026-09-28",
+  "validation": {
+    "size": 179,
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": true
+  },
+  "logistic_regression": {
+    "accuracy": 0.8044692737430168,
+    "precision": 0.7833333333333333,
+    "recall": 0.6811594202898551,
+    "f1": 0.7286821705426356,
+    "roc_auc": 0.8488801054018447,
+    "train_roc_auc": 0.862695770440645,
+    "training_time_sec": 0.0040967464447021484
+  },
+  "decision_tree": {
+    "accuracy": 0.7653631284916201,
+    "precision": 0.7076923076923077,
+    "recall": 0.6666666666666666,
+    "f1": 0.6865671641791045,
+    "roc_auc": 0.8030961791831357,
+    "train_roc_auc": 0.9045825093661086,
+    "training_time_sec": 0.002832174301147461
+  },
+  "random_forest": {
+    "accuracy": 0.7932960893854749,
+    "precision": 0.7857142857142857,
+    "recall": 0.6376811594202898,
+    "f1": 0.704,
+    "roc_auc": 0.841106719367589,
+    "train_roc_auc": 0.9502657555049354,
+    "training_time_sec": 7.306707859039307,
+    "best_params": {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "n_estimators": 300
+    }
+  }
+}
