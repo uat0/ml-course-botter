@@ -1,0 +1,77 @@
+{
+  "trained_at": "2026-10-12 14:50",
+  "n_train": 1166,
+  "n_test": 292,
+  "n_features": 257,
+  "linear_regression": {
+    "rmse_log": 0.1292,
+    "mae_log": 0.08796,
+    "r2_log": 0.90099,
+    "rmse_real": 21443.0,
+    "mae_real": 15025.0,
+    "cv_rmse_log": 0.13481,
+    "train_time_sec": 0.0478
+  },
+  "ridge": {
+    "rmse_log": 0.11811,
+    "mae_log": 0.08439,
+    "r2_log": 0.91725,
+    "rmse_real": 21514.0,
+    "mae_real": 15000.0,
+    "cv_rmse_log": 0.11752,
+    "train_time_sec": 0.0085,
+    "alpha": 200.0
+  },
+  "lasso": {
+    "rmse_log": 0.11205,
+    "mae_log": 0.08007,
+    "r2_log": 0.92552,
+    "rmse_real": 19613.0,
+    "mae_real": 14069.0,
+    "cv_rmse_log": 0.11344,
+    "train_time_sec": 0.022,
+    "alpha": 0.005,
+    "n_features_selected": 70,
+    "n_features_dropped": 187
+  },
+  "elasticnet": {
+    "rmse_log": 0.1116,
+    "mae_log": 0.07998,
+    "r2_log": 0.92612,
+    "rmse_real": 19699.0,
+    "mae_real": 14048.0,
+    "cv_rmse_log": 0.11312,
+    "train_time_sec": 0.0259,
+    "alpha": 0.005,
+    "l1_ratio": 0.7
+  },
+  "xgboost": {
+    "rmse_log": 0.11246,
+    "mae_log": 0.07881,
+    "r2_log": 0.92498,
+    "rmse_real": 18689.0,
+    "mae_real": 13673.0,
+    "cv_rmse_log": 0.11355,
+    "train_time_sec": 1.4797
+  },
+  "lightgbm": {
+    "rmse_log": 0.12148,
+    "mae_log": 0.08068,
+    "r2_log": 0.91246,
+    "rmse_real": 19057.0,
+    "mae_real": 13761.0,
+    "cv_rmse_log": 0.11657,
+    "train_time_sec": 1.3473
+  },
+  "stacking": {
+    "rmse_log": 0.10766,
+    "mae_log": 0.0751,
+    "r2_log": 0.93124,
+    "rmse_real": 18223.0,
+    "mae_real": 12950.0,
+    "cv_rmse_log": null,
+    "train_time_sec": 6.323
+  },
+  "best_model": "ElasticNet",
+  "best_overall": "Stacking"
+}
