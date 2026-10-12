@@ -1,7 +1,7 @@
 # 🏠 Module 2 — House Prices: предобработка и регрессия
 
 **Автор:** Боттер В.В., ПКТб-23-1
-**Дата обучения моделей:** 2026-10-12
+**Дата обучения моделей:** 2026-10-09
 **Датасет:** [House Prices — Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
 
 ## 📊 Результаты (отложенная выборка 20%, 292 домов)
