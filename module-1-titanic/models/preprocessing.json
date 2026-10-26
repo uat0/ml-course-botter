@@ -1,0 +1,16 @@
+{
+  "age_medians_by_pclass_sex": {
+    "1_female": 35.0,
+    "1_male": 40.0,
+    "2_female": 29.0,
+    "2_male": 30.0,
+    "3_female": 21.5,
+    "3_male": 26.0
+  },
+  "embarked_mode": "S",
+  "fare_medians_by_pclass": {
+    "1": 57.9792,
+    "2": 14.5,
+    "3": 8.05
+  }
+}
