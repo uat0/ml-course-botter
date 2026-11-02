@@ -1,0 +1,9 @@
+{
+  "best_model.pkl": "eab7e5a2b28b517c98f673b9c32c6fb862d8c4479a88568d60eea6fa65a9ba56",
+  "cat_model.pkl": "a3fbf2c50ecbc072448841c7b0068519248ebdfcd243150cfb12b394df09974b",
+  "lgbm_model.pkl": "95fd4e8fa8d9e19515a1cd33f70bc18eeae4d06bb4e8776ad551d29319b9965a",
+  "preprocessor.pkl": "a08b30c37fd86d8a98cbd5379bf771c0494979ab3c7c4e85025cf2bf68a3a22c",
+  "rf_model.pkl": "ac2c3f05a826541ec1df2f269b06a4128618654a520651fcc53fd5844acf92ac",
+  "scaler.pkl": "62d90f8656afad823b786a8f96050995728cee409aee2f00b55dc9319aa8a12b",
+  "xgb_model.pkl": "a681952f3daf6e79a781ad5017fdfb466b2ef5c9998f0220a89c5c2cbb9f66d9"
+}
