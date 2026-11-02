@@ -12,7 +12,7 @@
 |1|module-1-titanic|EDA + бинарная классификация|✅ Готово|[Открыть](./module-1-titanic/)|
 |2|module-2-house-prices|Предобработка данных + регрессия|✅ Готово|[Открыть](./module-2-house-prices/)|
 |3|module-3-churn|Ансамблевые методы (RF, XGBoost, LightGBM, CatBoost, Optuna, SHAP)|✅ Готово|[Открыть](./module-3-churn/)|
-|4|module-4-...|...|⏳ Ожидается|—|
+|4|module-4-features|Инженерия признаков (EDA, 4 модели, Optuna, SHAP)|✅ Готово|[Открыть](./module-4-features/)|
 |5|module-5-...|...|⏳ Ожидается|—|
 |6|module-6-...|...|⏳ Ожидается|—|
 |7|module-7-...|...|⏳ Ожидается|—|
@@ -24,3 +24,4 @@
 |1. Titanic|Logistic Regression|ROC-AUC 0.849|28.09.2026|
 |2. House Prices|ElasticNet (бонус: Stacking)|R² 0.926, RMSE(log) 0.112 (Stacking: R² 0.931)|12.10.2026|
 |3. Customer Churn|LightGBM (Optuna)|ROC-AUC 0.850, Recall 0.81|26.10.2026|
+|4. Online Shoppers|Random Forest (Optuna)|ROC-AUC 0.9349, F1 0.6781|02.11.2026|

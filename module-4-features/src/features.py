@@ -7,20 +7,26 @@ MONTH_MAP = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'June': 6,
 def engineer_features(frame):
     # Копия предотвращает изменение исходных данных при повторном вызове.
     out = frame.drop(columns=['Revenue'], errors='ignore').copy()
+    # Булев выходной получает однозначное числовое представление.
     out['Weekend'] = out['Weekend'].astype(int)
     out['TotalPages'] = out[['Administrative', 'Informational', 'ProductRelated']].sum(axis=1)
     out['TotalDuration'] = out[['Administrative_Duration', 'Informational_Duration',
                                'ProductRelated_Duration']].sum(axis=1)
     # Сглаживание знаменателя исключает деление на ноль.
+    # Единица в знаменателе задаёт сглаживание, а не настоящую среднюю цену.
     out['AvgPageValue'] = out['PageValues'] / (out['TotalPages'] + 1)
     out['BounceExitRatio'] = out['BounceRates'] / (out['ExitRates'] + 0.001)
+    # Значение определяется только типом текущего посетителя.
     out['IsNewVisitor'] = out['VisitorType'].eq('New_Visitor').astype(int)
     out['IsWeekend'] = out['Weekend']
     # Неизвестный месяц станет NaN и будет обработан обученным imputer.
     out['MonthNum'] = out['Month'].map(MONTH_MAP)
+    # Условная группа номинальных кодов не измеряет интенсивность трафика.
     out['IsHighTraffic'] = out['TrafficType'].gt(10).astype(int)
     out['DurationPerPage'] = out['TotalDuration'] / (out['TotalPages'] + 1)
+    # Доля товара отделяет профиль интереса от длины сессии.
     out['ProductPageShare'] = out['ProductRelated'] / out['TotalPages'].clip(lower=1)
+    # Доля времени дополняет простое число товарных страниц.
     out['ProductTimeShare'] = out['ProductRelated_Duration'] / out['TotalDuration'].clip(lower=1)
     # Временные и логарифмические преобразования используют только значения текущей строки.
     out['LogTotalDuration'] = np.log1p(out['TotalDuration'])

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-02",
+  "branch": "main",
+  "artifact_commit": "acd69063e804b336eb683339fc7c5947fa8f8395",
+  "source": "https://raw.githubusercontent.com/uat0/ml-course-botter/main/module-4-features",
+  "sha256_verified": true,
+  "feature_order_verified": true,
+  "sample_count": 3,
+  "probabilities_verified": true,
+  "absolute_tolerance": 1e-12
+}
